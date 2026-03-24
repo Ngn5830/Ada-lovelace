@@ -4,12 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ada Lovelace • Máquina Analítica</title>
+  
+  <!-- p5.js desde CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  
+  <!-- Tus archivos -->
   <link rel="stylesheet" href="style.css">
+  <script src="sketch.js"></script>
+
+  <style>
+    body { 
+      margin: 0; 
+      overflow: hidden; 
+      background: #0f0a19; 
+    }
+    #overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #title {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffd700;
+      font-size: 48px;
+      font-weight: bold;
+      text-shadow: 0 0 20px #ffd700;
+      margin: 0;
+      letter-spacing: 6px;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffd700;
+      font-size: 26px;
+      font-family: Georgia, serif;
+      z-index: 100;
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div id="overlay">
     <h1 id="title">ADA LOVELACE</h1>
   </div>
+  
+  <div id="loading">Cargando la Máquina Analítica de Ada Lovelace...</div>
 </body>
 </html>
