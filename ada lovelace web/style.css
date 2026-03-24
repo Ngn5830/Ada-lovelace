@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0f0a19;
+  font-family: 'Georgia', serif;
+}
+#overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+#title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffd700;
+  font-size: 42px;
+  font-weight: bold;
+  text-shadow: 0 0 20px #ffd700;
+  margin: 0;
+  letter-spacing: 4px;
+}
